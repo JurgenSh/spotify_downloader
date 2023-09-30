@@ -52,3 +52,32 @@ poetry run python main.py --reset-credentials
 ### Command-Line Arguments
 - `SONG_URL`: URL of the Spotify song you wish to download (Required).
 - `--format`: Choose the download format. Options include 'MP3', 'AAC', 'FLAC', 'M4A', 'OPUS', 'VORBIS', 'WAV'. Default is 'FLAC'.
+
+## Setting Up Pre-commit Hooks
+
+Pre-commit hooks help in automating tasks like code formatting, linting, and even running tests right before you commit changes. This ensures that you're not committing code that's broken or poorly formatted.
+
+### Installation
+
+1. Ensure you have Python installed on your machine.
+2. Install `pre-commit` using pip:
+
+    ```bash
+    pip install pre-commit
+    ```
+
+3. Navigate to your project directory and install the pre-commit hooks:
+
+    ```bash
+    pre-commit install
+    ```
+
+### Usage
+
+Now, pre-commit will automatically run the specified hooks defined in `.pre-commit-config.yaml` every time you try to make a git commit. If any of the checks fail, the commit will be aborted.
+
+To manually run all pre-commit hooks on all files:
+
+```bash
+pre-commit run --all-files
+```
