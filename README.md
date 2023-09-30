@@ -9,6 +9,20 @@ This is a small tool designed to download songs from Spotify.
 
 ## Setup
 
+## Acquiring Spotify Credentials
+
+To run this project, you'll need Spotify Developer credentials, which include a `Client ID` and `Client Secret`.
+
+### Steps to Get Spotify Credentials:
+
+1. **Go to Spotify Developer Dashboard**: Navigate to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
+   
+2. **Log In or Sign Up**: If you already have a Spotify account, log in. Otherwise, sign up for a new account.
+   
+3. **Create a New App**: Once you are logged in, click on `Create an App`. Fill in the required details like the name of the app, description, etc.
+
+4. **Retrieve Credentials**: After the app is created, you'll be redirected to the app dashboard where you can find your `Client ID` and `Client Secret`.
+
 ### Using Python Script
 
 1. **Clone the Repository**: 
