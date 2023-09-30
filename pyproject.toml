@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "spotify-downloader"
+version = "0.1.0"
+description = "This is a little tool to download songs from spotify"
+authors = ["Jurgen Shiqerukaj"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+argparse = "^1.4.0"
+yt-dlp = "^2023.09.24"
+savify = { git = "https://github.com/stschake/savify.git", branch = "feature/use-yt-dlp" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[build]
+script = "python main.py"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b2"
+pre-commit = "^2.13.0"
